@@ -248,7 +248,7 @@ table.dataTable thead .sorting::after {
   margin-left: 10px;
 }
 
-.dataTables_wrapper .dataTables_paginate {
+/* .dataTables_wrapper .dataTables_paginate {
   padding-top: 0.25em;
   text-align: right;
 }
@@ -308,7 +308,7 @@ table.dataTable thead .sorting::after {
   background: #272c33;
   border-color: #272c33;
   color: #fff;
-}
+} */
 
 @-webkit-keyframes rubberBand {
   0% {

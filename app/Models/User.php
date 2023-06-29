@@ -58,4 +58,14 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function getLastLoginHour(){
+        $lastLoginTimestamp = $this->last_login_at;
+        if (!$lastLoginTimestamp) {
+            return null;
+        }
+        $lastLoginDateTime = Carbon::parse($lastLoginTimestamp);
+        return $lastLoginDateTime->format('H:i');
+    }
+
 }

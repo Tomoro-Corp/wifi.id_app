@@ -38,6 +38,8 @@ Route::post('/logout', [LoginController::class, 'logout']);
 
 Route::get('/dashboard', 'App\Http\Controllers\Dashboard\DashboardController@index');
 
+Route::get('/dashboard/detail', 'App\Http\Controllers\Dashboard\DashboardController@detail');
+
 Route::get('/reload-captcha', [LoginController::class, 'reloadCaptcha']);
 
 Route::get('/download', 'App\Http\Controllers\DownloadController@index');
